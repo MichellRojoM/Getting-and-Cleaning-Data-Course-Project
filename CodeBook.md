@@ -4,12 +4,12 @@
 
 Activity labels :
 
-1. WALKING
-2. WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
-4. SITTING
-5. STANDING
-6. LAYING
+* `WALKING` (value `1`): subject was walking during the test
+* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
+* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
+* `SITTING` (value `4`): subject was sitting during the test
+* `STANDING` (value `5`): subject was standing during the test
+* `LAYING` (value `6`): subject was laying down during the test
 
 Features :
 
@@ -22,4 +22,11 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-#The tidy data contains the next variables 
+#The tidy data contains the next variables: 
+
+## ID 
+* `subject` The ID of the subject 
+* `activity` - The type of activity performed when the corresponding measurements were taken
+
+## Mesurements 
+*`the average and std of each variable for each activity and each subject`
