@@ -12,4 +12,5 @@ The code works as follows:
 4.First Merge training and test data, and then both 
 
 5.Rename the columns of data 
+
 6.Write Tidy Data
