@@ -48,4 +48,4 @@ data$Subject <- as.factor(data$Subject)
 tidydata<-aggregate(data, by=list(activity = data$Activity, subject=data$Subject), mean)
 dim(tidydata)
 tidydata<-tidydata[,1:81] 
-head(tidydata,n=1)
+write.table(tidydata, "tidydata.txt", sep="\t",row.name=FALSE)
